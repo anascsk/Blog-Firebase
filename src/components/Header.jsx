@@ -1,13 +1,14 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import {ImBlog} from  'react-icons/im'
 
 const Header = ({ isAuth, signUserOut }) => {
   return (
     <Navbar bg="info" variant="light" >
       <Container>
         <Navbar.Brand style={{fontSize: 28, fontWeight: 600, }} variant="danger" as={Link} to="/">
-          blogbae
+          <i><ImBlog/> Blogbae</i>
         </Navbar.Brand>
         <Nav className="me-auto-justify-content-end" >
           <Nav.Link as={Link} to="/" >

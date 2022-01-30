@@ -46,7 +46,7 @@ export const Wrapper = styled.div`
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(2, 1fr);
-  width: 100%;
+  width: 96%;
   align-content: center;
   @media (max-width: 900px) {
     grid-template-columns: repeat(1, 1fr);
