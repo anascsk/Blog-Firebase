@@ -1,7 +1,7 @@
 import { auth, provider } from "../firebase-config";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { Container, GoogleButton } from "../styles/Login";
+import { Container, GoogleButton } from "../styles/Login.style";
 
 const Login = ({ setIsAuth }) => {
   let navigate = useNavigate();

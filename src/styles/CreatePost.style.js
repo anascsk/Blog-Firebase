@@ -5,16 +5,21 @@ export const Container = styled.div`
   height: calc(100vh - 80px);
   display: grid;
   place-items: center;
+
 `;
 export const CreatePostWrap = styled.div`
   width: 500px;
   height: auto;
   padding: 20px;
-  background-color: black;
   border-radius: 12px;
   color: white;
   display: flex;
   flex-direction: column;
+  background-color: rgb(95, 99, 96); 
+  @media only screen and (max-device-width: 600px) {
+  width: 90vw;
+  
+  }
   h1 {
     text-align: center;
   }
@@ -50,4 +55,9 @@ export const Button = styled.div`
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+align-items: center;
+  color: black;
 `;

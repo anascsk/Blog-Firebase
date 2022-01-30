@@ -8,6 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  background-color: rgb(240, 252, 243);
   h1{
 
   }
@@ -34,7 +35,16 @@ export const Post = styled.div`
   border-radius: 15px;
   display: flex;
   flex-direction: column;
- 
+  background-color: rgb(209, 248, 219);
+  @media only screen and (max-device-width: 600px) {
+  width: 90vw;
+  
+  }
+  h1{
+    @media only screen and (max-device-width: 600px) {
+    font-size: 20px 
+    }
+  }
 
 `;
 export const PostHeader = styled.div`

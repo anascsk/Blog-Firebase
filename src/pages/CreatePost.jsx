@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
-import { Container, CreatePostWrap, InputWrap } from '../styles/CreatePost'
+import { Container, CreatePostWrap, InputWrap, Button } from '../styles/CreatePost.style'
 
 const CreatePost = ({ isAuth }) => {
   const [title, setTitle] = useState("");
@@ -39,13 +39,13 @@ const CreatePost = ({ isAuth }) => {
           <InputWrap>
               <label>Post:</label>
               <textarea
-              placeholder="post..."
+              placeholder="Open yourself here..."
               onChange={(event) => {
                   setPostText(event.target.value)
               }} />
 
           </InputWrap>
-          <button onClick={createPost}>Submit Post</button>
+          <Button onClick={createPost}>Submit Post</Button>
       </CreatePostWrap>
 
   </Container>;
