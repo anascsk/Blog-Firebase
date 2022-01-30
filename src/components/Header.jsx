@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Header = ({ isAuth, signUserOut }) => {
   return (
-    <Navbar bg="success" variant="light" >
+    <Navbar bg="info" variant="light" >
       <Container>
-        <Navbar.Brand style={{fontSize: 28, fontWeight: 600,}} variant="danger" as={Link} to="/">
+        <Navbar.Brand style={{fontSize: 28, fontWeight: 600, }} variant="danger" as={Link} to="/">
           blogbae
         </Navbar.Brand>
         <Nav className="me-auto-justify-content-end" >

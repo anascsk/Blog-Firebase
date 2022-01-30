@@ -51,6 +51,7 @@ export const Post = styled.div`
   }
   h1 {
     color: #356e54e0;
+   
     @media only screen and (max-device-width: 600px) {
       font-size: 20px;
     }
