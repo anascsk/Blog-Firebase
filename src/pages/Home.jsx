@@ -13,6 +13,7 @@ import {
   Button,
   Wrapper,
   AuthorWrapper,
+  LandingImage
 } from "../styles/Home.style";
 
 const Home = ({ isAuth }) => {
@@ -37,6 +38,7 @@ const Home = ({ isAuth }) => {
 
   return (
     <Container>
+      <LandingImage></LandingImage>
       <Wrapper>
         {postLists.map((post) => {
           console.log(postLists);
