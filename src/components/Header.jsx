@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = ({ isAuth, signUserOut }) => {
   return (
-    <Navbar bg="info" variant="light" >
+    <Navbar bg="success" variant="light" >
       <Container>
         <Navbar.Brand style={{fontSize: 28, fontWeight: 600,}} variant="danger" as={Link} to="/">
           blogbae
